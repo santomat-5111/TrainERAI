@@ -92,6 +92,6 @@ See the [open issues](https://github.com/othneildrew/Best-README-Template/issues
 
 - [Santo Santhosh](https://github.com/santomat-5111)
 - [Yazid Marzuk K P](https://github.com/yazidmarzuk)
-- [Eshaan Bhardwaj](https://github.com/Eshaan-B)
-- [Dhruv Bhatt](https://github.com/dhruvbhatt702)
-- [Sidharth Manoj](https://github.com/Sidharth092)
+- [Shezin Saleem](https://github.com/Eshaan-B)
+- [Sreerag VK](https://github.com/dhruvbhatt702)
+- [Thej Ratheesh](https://github.com/Sidharth092)
