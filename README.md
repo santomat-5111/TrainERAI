@@ -1,4 +1,4 @@
-# TTrainERAI
+# TrainERAI
 
 #### Official Entry of TrinERAI, from SRM Institute of Science and Technology, Kattankulathur, to Hack2leap'22.
 
@@ -10,80 +10,59 @@
 
 ## Problem Statement 🚧
 
--  HealthCare
-
--  COVID Tracking and Escalation
+Everyone benefits from exercise and physical activity. Staying active can benefit you in a variety of ways, regardless of your health or physical abilities. In reality, research shows that “taking it easy” is dangerous. When older adults lose their ability to perform activities on their own, inactivity is often to fault rather than aging. Lack of physical activity can also contribute to additional doctor visits, hospitalizations, and medication use for a range of conditions. This idea of a personal AI fitness trainer allows more people to get involved in the fitness field. Using this AI trainer makes sure everyone can perform exercises in the correct way, minimizing the risk of injuries. Then using the appropriate body part angles, the count of exercise is determined. We will be using ERAI, a personal fitness tracker bot; this will have unique features which we might add during the hackathon.
 
 ## Background 📖
 
- As of 30th June 2020, there are 560,000+ cases of the novel Corona Virus reported in India, out of which  about 16,500 people have lost there lives, and the worse part is this number is still growing. 
-
- There are two ways to combat COVID-19, Flattening the curve, or raising the line. While flattening the curve is achieved by people being socially distant, raising the line is achieved by raising the capacity of healthcare facilities available. Our Web Application is based on the second aspect, i.e raising the line.
-
-  The Novel Coronavirus has four stages of transmission:
-
-- Stage 1: First Appearance
-- Stage 2: Local Transmission
-- Stage 3: Community Transmission
-- Stage 4: National Epidemic <br>
-
- India as of today has entered *stage 3* and there still isn't any sign of vaccines or drugs. So the only way out currently is to stop further spread of this virus as much as we can.
-
+ 
 ## About Our Product 🔧
 
 ### What
-
- We at team covidcoders, propose a Web-application which is preventive, personalized and most importantly affordable. Our web-app called, **'Covid Care'**, serves the purpose of tracking and escalation of people who might be COVID suspects based on the inputs provided by individuals. This information is provided by the user voluntarily and stays safe within our database. We do not store any essential data, as Security of the system is our priority. The WebApp provides minimalist interface aimed at users from all age groups. 
-
- With our product, we implement two chatbots, one of them is designated for a pre screening of the patient which is done before assigning a doctor, and the other a 'Mental Health' Chatbot, which is aimed to check the User's mood and provide them engaging and fun activities. 
-
- The second phase of the WebApp is aimed at reaching out to available doctors, booking tests and provides news information about the current state of COVID around the world. It also implements a feature of 'reporting people' using which people can report probable COVID suspects.
-
- There's a third separate section in which we embed reliable information from sources such as YouTube, News Sources, and Quizzes as the basic informational guide.
-
- Covid Care is expanded to a mobile application which is a WebView of our WebApplication and is built using React Native.
-
- We also implement a 'tracking' feature for the User to track their health visually by synthesizing data in the form of vitals taken during the User's conversation with our Chatbot.
-
- We also plan to have an in house Mental Assessment Quiz that will help the User stay happy and sane even when they are restricted to four walls.
+In our project, we will be developing a web application for live fitness tracking. Various methods have been proposed in order to detect different postures of a human being. Posture analysis also plays an essential role in the field of medicine such as finding out the sleeping posture of a patient. Image processing using openCV and mediapipe python library for human posture estimation. Image processing based approach helps to analyze postures such as standing and sitting postures. Fitness exercises are exceptionally beneficial to individual health, but they can also be ineffectual and quite possibly harmful if performed incorrectly. When someone does not use the proper posture, exercise mistakes may occur. This proposed application utilizes pose estimation and detects the user’s exercise posture and provides detailed, customized recommendations on how the user can improve their posture. A pose estimation module in python called mediapipe helps to detect all major joints of the human body. Then it calculates the angle between the joints and increases the counter for each repetition. Pose estimation is a method in which spatial locations of key body joints are calculated using an image or video of the person. This computer vision technique detects human posture in videos and shows the key points such as elbow or shoulder in the output video.
 
 ### Why
 
- With Covid Care, we aim at providing a simple interface so users from all age groups can use it, and can be aware about the situation. Due to restrictions in movement, and the lockdown that we are under, most people are unable to consult physicians/doctors or book tests. Our Product, Covid Care comes to aid as it connects individuals with doctors provides features as online pathology labs, which are functional in the zone so the user can avail these neccesities without having to step out of their houses. We provide simple and minimal UI/UX in a small storage space as we provide a simple WebView of our Web App in a React Native Application.
+ With TrainERAI, we aim at providing a simple interface so users from all age groups can use it, and can be aware about the situation. Our Product, TrainERAI comes to aid as it enables individuals to workout anywhere and anytime. We provide simple and minimal UI/UX in a small storage space as we provide a simple WebView of our Web App in a React Native Application.
 
 ### How
+In our project, we will be developing a web application for live fitness tracking. Various methods have been proposed in order to detect different postures of a human being. Posture analysis also plays an essential role in the field of medicine such as finding out the sleeping posture of a patient. Image processing using openCV and mediapipe python library for human posture estimation. Image processing based approach helps to analyze postures such as standing and sitting postures. Fitness exercises are exceptionally beneficial to individual health, but they can also be ineffectual and quite possibly harmful if performed incorrectly. When someone does not use the proper posture, exercise mistakes may occur. This proposed application utilizes pose estimation and detects the user’s exercise posture and provides detailed, customized recommendations on how the user can improve their posture. A pose estimation module in python called mediapipe helps to detect all major joints of the human body. Then it calculates the angle between the joints and increases the counter for each repetition. Pose estimation is a method in which spatial locations of key body joints are calculated using an image or video of the person. This computer vision technique detects human posture in videos and shows the key points such as elbow or shoulder in the output video.
 
- We have come up with an idea, 'STAE-C', which expands to 'Systematic Tracking and Escalation Checking' for COVID-19. The Process Flow is in the following order:
+We have been planning to add a bot which guides users in all aspects, it can even give an alert as well as a success message for each and every movement of the user for each exercise. We can also include voice assistance for the next movement and any wrong posture is detected by the model. It can also monitor your exercises to help you keep count of your exercise repetitions performed, but also alerts you when you have an incorrect posture or have not performed a full repetition. A visualization chart depicting your performance throughout the exercise will be displayed when you end the program. 
 
-- First the User takes a screening test about symptoms while having a conversation with our Chatbot.
-- If the Chatbot predicts that the User might be carrying significant symptoms, it refers a Doctor to the User.
-- Data fed to the chatbot (Health Vitals) is used for visual representation for better analysis. 
-- The User can interact with the Doctor using a  after booking an appointment and report about more symptoms and vital information.
-- If the Doctor confirms that the User might be a probable patient of COVID-19, the Doctor suggests the required tests for confirmation.
-- Covid Care now helps connect the User to the Pathology Lab, wherein the User's sample can be taken for further evaluation.
-- If the test results come positive, details of the user are shared with designated authorities for a better escalation.
+It can be really useful in any pandemic situation like COVID, due to the unfortunate position of isolation, people are struggling with various health-related problems such as obesity, irregular sleep patterns, eye strain, mental stress, decreased immunity, and hence, are at a higher risk of getting infected with the Coronavirus. The impact of staying fit is huge and it helps to be sane with all the stress people have. Now as the gyms are closed and people don't have the required guidance, an alternative is needed. In this pursuit of adapting to modern norms, a solution with gamified concepts is needed to help people with their fitness routine and keep them motivated to exercise daily.
 
- The User's personal details as Address or Mobile Number are kept private. Only Name, Age, gender and other essential details are shared with the Doctor. Aforementioned details and the Email Address of the user are shared with the Pathology Lab to enable the User to view and connect with the Lab and vice versa. Only if the result is positive, all required details are shared with authorities.
+This eliminates the need for any trainer or expert’s intervention to know the correct technique for performing yogasanas and rectifying them. You just need your laptop which has a webcam to run this awesome application! The massive library of poses makes it perfect for everyone, be it beginners or professionals. This application can also calculate the calories burned during each exercise, and display it on the screen. It will be a live calorie tracker and may differ for each individual. We can also implement boxing training in this application as well, that is different targets will be displayed on the screen and users are asked to hit at the correct point, to score and accordingly till a target is reached, thereby it ensures if the users posture and angle is correct. Also we can implement zumba training in the same way as above, by having a target goal each day motivates users to be consistent. 
 
- This process reduces unwanted hastle by reducing the time and effort that needs to be put up by a user to test himself or herself for COVID. Users will be at ease to use the app irrespective of their age because of its simplicity and integration, all at one place, while boosting the efficiency in monitoring the situation and people.
+Introducing diet plans would be one of our future scopes of our project idea. This can be achieved if the personnel is undergoing a diet andhe/shewants to only consume a certain amount of calories and then the app will display a three course meal, consisting of breakfast, lunch and dinner providing all the macros and micronutrients for the person. This can also include food recipes if the person wishes to cook his meals. This will be helpful for people who is really conscious regarding their physique and living style.
 
-## Technology Principles Proposed 💡
+Also adding a BMI calculator will also help the person track his/her body fat percentage and he/she can work on his progress with the help of ERAI.
 
-- Cloud First
-- Mobile First
-- Interoperable
-- Modular
-- Minimalist Design
-- Reusable
-- Open APIs
 
 ## Proposed Technology Stack 💻
 
-- Firebase/Firestore
-- Azure
-- React
-- React Native
-- HTML, CSS, JavaScript
+- Python
+- HTML/CSS/Js
+- Flask
+- Spoonful API
+- Figma
+- Firebase
+- Nodejs
+- Pygame
+- Keras, Tensorflow, OpenCV
+
+## Roadmap
+
+- [x] Add Changelog
+- [x] Add back to top links
+- [ ] Add Additional Templates w/ Examples
+- [ ] Add "components" document to easily copy & paste sections of the readme
+- [ ] Multi-language Support
+    - [ ] Chinese
+    - [ ] Spanish
+
+See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Tools and APIs🎯
 
