@@ -54,4 +54,8 @@ def legs():
 def boxing():
     return render_template('boxing.html') 
 
+@app.route('/login.html')
+def login():
+    return render_template('login.html') 
+
 app.run(debug=True)
