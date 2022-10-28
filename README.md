@@ -1,10 +1,5 @@
-# TrainERAI
-#### Official Entry for TrainERAI, from SRM Institute of Science and Technology, Kattankulathur, to Hack2Leap'22.
-![Collaborators](https://img.shields.io/badge/collaborators-5-red)<br>
-![Status](https://img.shields.io/badge/status-completed-yellow)<br>
-![Issues](https://img.shields.io/badge/issues-0-blue)<br>
-[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)<br>
-[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)<br>
+
+
 
 <!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
 <a name="readme-top"></a>
@@ -42,7 +37,7 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">TrainERAI</h3>
 
   <p align="center">
     Official Entry for TrainERAI, from SRM Institute of Science and Technology, Kattankulathur, to Hack2Leap'22
@@ -93,16 +88,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+Everyone benefits from exercise and physical activity. Staying active can benefit you in a variety of ways, regardless of your health or physical abilities. In reality, research shows that “taking it easy” is dangerous. When older adults lose their ability to perform activities on their own, inactivity is often to fault rather than aging. Lack of physical activity can also contribute to additional doctor visits, hospitalizations, and medication use for a range of conditions. This idea of a personal AI fitness trainer allows more people to get involved in the fitness field. Using this AI trainer makes sure everyone can perform exercises in the correct way, minimizing the risk of injuries. Then using the appropriate body part angles, the count of exercise is determined. We will be using ERAI, a personal fitness tracker bot; this will have unique features which we might add during the hackathon
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
