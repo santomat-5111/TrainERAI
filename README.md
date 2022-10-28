@@ -1,6 +1,6 @@
-# TEAM COVIDCODERS
+# TTrainERAI
 
-#### Official Entry of Team Covid Coders, from SRM Institute of Science and Technology, Kattankulathur, to Hack in India, by Script Foundation.
+#### Official Entry of TrinERAI, from SRM Institute of Science and Technology, Kattankulathur, to Hack2leap'22.
 
 ![Collaborators](https://img.shields.io/badge/collaborators-5-red)<br>
 ![Status](https://img.shields.io/badge/status-completed-yellow)<br>
