@@ -52,13 +52,17 @@ Also adding a BMI calculator will also help the person track his/her body fat pe
 
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [x] Human pose estimation 
+- [x] Pygame implementation
+- [ ] Meal planner
+- [ ] BMI calculator
+- [ ] Calorie tracker
+- [ ] UI/UX developement 
+- [ ] front-end implementation
+- [ ] back-end implementation
+- [ ] Code integration and development 
+- [ ] Charts
+
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
 
