@@ -4,8 +4,8 @@ from camera import Shoulder, Video, Leg, Game
 app = Flask(__name__)
 
 @app.route('/')
-def index():
-    return render_template('index.html')
+def home():
+    return render_template('home.html')
 
 def gen(camera):
     while True:
@@ -57,5 +57,9 @@ def boxing():
 @app.route('/login.html')
 def login():
     return render_template('login.html') 
+
+@app.route('/index.html')
+def index():
+    return render_template('index.html')
 
 app.run(debug=True)
