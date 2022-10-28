@@ -42,16 +42,19 @@ p, ul, ol {
   font-family: "Roboto", Arial, sans-serif;
 }
 
-h1, h3, h4, h5, h6 {
+h1, h4, h5, h6 {
   color: #212121;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
   margin: 0 0 30px 0;
 
 }
+h3{
+  color: rgb(171, 48, 48);
+}
 
 h2{
-  color: #212121;
+  color: #8d8b8b;
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 300;
   margin: -85px 0 30px 0;
