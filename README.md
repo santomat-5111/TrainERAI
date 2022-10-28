@@ -1,45 +1,21 @@
-# TrainERAI
-
-#### Official Entry of TrinERAI, from SRM Institute of Science and Technology, Kattankulathur, to Hack2leap'22.
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
+![Collaborators](https://img.shields.io/badge/collaborators-5-red)
+![Status](https://img.shields.io/badge/status-completed-yellow)
+![Issues](https://img.shields.io/badge/issues-0-blue)
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
 
-<!-- PROJECT LOGO -->
-<br />
+
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="src/images/TRAINERAI LOGO.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">TrainERAI</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    Official Entry of TrainErai, from SRM Institute of Science and Technology, Kattankulathur, to Hack2Leap'22
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
@@ -54,31 +30,7 @@
 
 
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+
 
 
 ## Problem Statement 🚧
@@ -86,6 +38,7 @@
 Everyone benefits from exercise and physical activity. Staying active can benefit you in a variety of ways, regardless of your health or physical abilities. In reality, research shows that “taking it easy” is dangerous. When older adults lose their ability to perform activities on their own, inactivity is often to fault rather than aging. Lack of physical activity can also contribute to additional doctor visits, hospitalizations, and medication use for a range of conditions. This idea of a personal AI fitness trainer allows more people to get involved in the fitness field. Using this AI trainer makes sure everyone can perform exercises in the correct way, minimizing the risk of injuries. Then using the appropriate body part angles, the count of exercise is determined. We will be using ERAI, a personal fitness tracker bot; this will have unique features which we might add during the hackathon.
 
 ## Background 📖
+We will be deploying our web application which can help the user to track his/her calories or BMI. There will be multiple workout sessions, with the help of AI it will check for the corrections during any workout and as well as give a counter and display calories burned. There will be also a meal planner where user can input the calories and recieve an entire meal plan for the day. There will be an interactive workout game which will be implemented for all ages. If time permits, there wil be some additional features too.
 
  
 ## About Our Product 🔧
@@ -127,14 +80,14 @@ Also adding a BMI calculator will also help the person track his/her body fat pe
 
 - [x] Human pose estimation 
 - [x] Pygame implementation
-- [ ] Meal planner
-- [ ] BMI calculator
-- [ ] Calorie tracker
-- [ ] UI/UX developement 
-- [ ] front-end implementation
-- [ ] back-end implementation
-- [ ] Code integration and development 
-- [ ] Charts
+- [x] Meal planner
+- [x] BMI calculator
+- [x] Calorie tracker
+- [x] UI/UX developement 
+- [x] front-end implementation
+- [x] back-end implementation
+- [x] Code integration and development 
+- [x] Charts
 
 
 See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
