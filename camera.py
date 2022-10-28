@@ -1,6 +1,12 @@
+from enum import Flag
 import cv2
+import random
+import pygame
 import mediapipe as mp
 import numpy as np
+from cvzone.HandTrackingModule import HandDetector
+import time
+from sys import exit
 
 class Video(object):
     def __init__(self):
@@ -348,3 +354,109 @@ class Leg(object):
                                         )
                 ret,jpg=cv2.imencode('.jpg',image)
                 return jpg.tobytes()
+
+
+
+class Game(object):
+    # def __init__(self):
+    #     Flag = True
+       
+    # def __del__(self):
+    #     self.cap.release()
+
+    # def get_frame(self):
+    #     #ret,frame = self.cap.read()
+    #     ret,jpg=cv2.imencode('.jpg',frame)
+    #     return jpg.tobytes()
+
+    def get_frame(self):
+        # Images
+        pygame.init()
+        self.fps = 30
+        self.clock = pygame.time.Clock()
+        self.cap=cv2.VideoCapture(0)
+        self.cap.set(3, 1280)  # width
+        self.cap.set(4, 720)  # height
+        self.width, self.height = 1280, 720
+        self.window = pygame.display.set_mode((self.width, self.height))
+        pygame.display.set_caption("Punch Reaction")
+        imgBalloon = pygame.image.load('Resources/punching_bag.png').convert_alpha()
+        rectBalloon = imgBalloon.get_rect()
+        rectBalloon.x, rectBalloon.y = 200, 100
+        
+        # Variables
+        speed = 15
+        score = 0
+        startTime = time.time()
+        totalTime = 30
+        
+        # Detector
+        detector = HandDetector(detectionCon=0.8, maxHands=2)
+        
+        
+        def resetBalloon():
+            rectBalloon.x = random.randint(100, img.shape[1] - 100)
+            rectBalloon.y = img.shape[0] + 50
+        
+        
+        # Main loop
+        start = True
+        while start:
+            # Get Events
+            for event in pygame.event.get():
+                if event.type == pygame.QUIT:
+                    start = False
+        
+            # Apply Logic
+            timeRemain = int(totalTime -(time.time()-startTime))
+            if timeRemain <0:
+                self.window.fill((255,255,255))
+        
+                font = pygame.font.Font('Resources/Marcellus-Regular.ttf', 50)
+                textScore = font.render(f'Your Score: {score}', True, (50, 50, 255))
+                textTime = font.render(f'Time UP', True, (50, 50, 255))
+                self.window.blit(textScore, (450, 350))
+                self.window.blit(textTime, (530, 275))
+        
+            else:
+                # OpenCV
+                success, img = self.cap.read()
+                img = cv2.flip(img, 1)
+                hands, img = detector.findHands(img, flipType=False)
+        
+                rectBalloon.y -= speed  # Move the balloon up
+                # check if balloon has reached the top without pop
+                if rectBalloon.y < 0:
+                    resetBalloon()
+                    speed += 1
+        
+                if hands:
+                    hand = hands[0]
+                    x, y = hand['lmList'][8][0:2]
+                    if rectBalloon.collidepoint(x, y):
+                        resetBalloon()
+                        score += 10
+                        speed += 1
+        
+                imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
+                imgRGB = np.rot90(imgRGB)
+                frame = pygame.surfarray.make_surface(imgRGB).convert()
+                frame = pygame.transform.flip(frame, True, False)
+                self.window.blit(frame, (0, 0))
+                self.window.blit(imgBalloon, rectBalloon)
+        
+                font = pygame.font.Font('Resources/Marcellus-Regular.ttf', 50)
+                textScore = font.render(f'Score: {score}', True, (50, 50, 255))
+                textTime = font.render(f'Time: {timeRemain}', True, (50, 50, 255))
+                self.window.blit(textScore, (35, 35))
+                self.window.blit(textTime, (1000, 35))
+        
+            # Update Display
+            pygame.display.update()
+            # Set FPS
+            self.clock.tick(self.fps)
+         	
+        pygame.quit()
+        self.cap.release()
+            # ret,jpg=cv2.imencode('.jpg',frame)
+            # return jpg.tobytes()
