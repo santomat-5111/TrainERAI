@@ -1,31 +1,11 @@
-# TrainERAI
 
-#### Official Entry of TrinERAI, from SRM Institute of Science and Technology, Kattankulathur, to Hack2leap'22.
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+![Collaborators](https://img.shields.io/badge/collaborators-5-red)<br>
+![Status](https://img.shields.io/badge/status-completed-yellow)<br>
+![Issues](https://img.shields.io/badge/issues-0-blue)<br>
+[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](http://commonmark.org)<br>
+[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)<br>
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 
 
@@ -33,13 +13,13 @@
 <br />
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="src/images/TRAINERAI LOGO.png" alt="Logo" width="80" height="80">
   </a>
-
-  <h3 align="center">Best-README-Template</h3>
+Official Entry of TrainERAI, from SRM Institute of Science and Technology, Kattankulathur, to Hack2Leap'22.
+  <h3 align="center">TrainERAI</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    
     <br />
     <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
