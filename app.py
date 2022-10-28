@@ -62,4 +62,8 @@ def login():
 def index():
     return render_template('index.html')
 
+@app.route('/bmi.html')
+def bmi():
+    return render_template('bmi.html')
+
 app.run(debug=True)
