@@ -9,7 +9,7 @@
 
 <div align="center">
   <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="src/images/tRAINERAI WHITE.png" alt="Logo" width="200" height="80">
+    <img src="Resources/images/tRAINERAI WHITE.png" alt="Logo" width="200" height="80">
   </a>
 
   <h3 align="center">TrainERAI</h3>
