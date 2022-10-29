@@ -110,7 +110,7 @@ class Video(object):
                 cv2.rectangle(image, (640,0), (415,73), (0,255,0), -1)
 
                 # guide data
-                cv2.putText(image, 'Now', (430,24), 
+                cv2.putText(image, 'Next', (430,24), 
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1, cv2.LINE_AA)
                 cv2.putText(image, self.guide, 
                             (430,60), 
@@ -343,7 +343,7 @@ class Leg(object):
                 cv2.rectangle(image, (640,0), (415,73), (0,255,0), -1)
 
                 # guide data
-                cv2.putText(image, 'Now', (430,24), 
+                cv2.putText(image, 'Next', (430,24), 
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1, cv2.LINE_AA)
                 cv2.putText(image, self.guide, 
                             (430,60), 
