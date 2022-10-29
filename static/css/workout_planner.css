@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.title{
+    height: 25vh;
+    background-color:  #12121f;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1{
+    font-size: 5rem;
+    font-weight: 300;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.container{
+    width: 100%;
+    height: 85vh;
+    background-color: #12121f;
+    color: #eee;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.planner{
+    width: 45rem;
+    height: 52rem;
+    background-color: #222227;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.workout{
+    width: 100%;
+    height: 12rem;
+    background-color: #167e56;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.workout h1{
+    font-size: 3rem;
+    font-weight: 400;    
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.exercises div{
+    width: 100%;
+    height: calc(40rem/4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.workout-buttons{
+    border: 5rem solid #222227;
+}
+
+.Save{
+    border: 2rem solid #222227;
+    background-color: seagreen;
+}
+
+.Delete{
+    border: 2rem solid #222227;
+    background-color: rgb(199, 104, 87);
+}
+
+.calendar{
+    width: 45rem;
+    height: 52rem;
+    background-color: #222227;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+}
+
+.month{
+    width: 100%;
+    height: 12rem;
+    background-color: #167e56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i{
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.month h1{
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+.month p{
+    font-size: 1.6rem;
+}
+
+.weekdays{
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
+
+.weekdays div{
+    width: calc(44.2rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+}
+
+.days div{
+    font-size: 1.4rem;
+    margin: 0.3rem;
+    width: calc(40.2rem/7);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today, .selectedDay, .selectedToday, .selectedSavedDay){
+    background-color: #262626;
+    border: 0.2rem solid #777;
+    cursor: pointer;
+}
+
+.selectedSavedDay:hover, .selectedDay:hover, .selectedToday:hover{
+    border: 0.4rem solid rgba(233, 233, 233);
+}
+
+.days div:hover{
+    cursor: pointer;
+}
+
+.prev-date, .next-date{
+    opacity: 0.5;
+}
+
+.today{
+    background-color: #167e56;
+}
+
+.selectedToday{
+    border: 0.3rem solid rgb(233, 233, 233);
+    background-color: #167e56;
+}
+
+.selectedDay{
+    border: 0.3rem solid rgb(233, 233, 233);
+}
+
+.selectedSavedDay{
+    background:radial-gradient(#167e56 1.4rem, transparent 1.5rem);
+    border: 0.3rem solid rgb(233, 233, 233);
+}
+
+.savedDay{
+    background:radial-gradient(#167e56 1.4rem, transparent 1.5rem);
+}
+
+.Save:hover{
+    cursor: pointer;
+}
+
+.Delete:hover{
+    cursor: pointer;
+}
+
+.inputControl{
+    color: rgb(233, 233, 233);
+    font-size: 1.8rem;
+    background-color: #313133;
+    border: none;
+    padding-left: 0.4rem;
+}
+
+.numberControl{
+    color: rgb(233, 233, 233);
+    font-size: 1.8rem;
+    background-color: #313133;
+    width: 40%;
+    border: none;
+    padding-left: 0.4rem;
+}
