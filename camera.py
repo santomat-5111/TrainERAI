@@ -89,18 +89,18 @@ class Video(object):
                     pass
 
                         # Setup status box
-                cv2.rectangle(image, (0,0), (225,73), (245,117,16), -1)
+                cv2.rectangle(image, (0,0), (225,73), (0,0,0), -1)
                 
                 # Rep data
                 cv2.putText(image, 'REPS', (15,24), 
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1, cv2.LINE_AA)
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1, cv2.LINE_AA)
                 cv2.putText(image, str(self.counter), 
                             (10,60), 
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2, cv2.LINE_AA)
                 
                 # Stage data
                 cv2.putText(image, 'STAGE', (80,24), 
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1, cv2.LINE_AA)
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1, cv2.LINE_AA)
                 cv2.putText(image, self.stage, 
                             (80,60), 
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2, cv2.LINE_AA)
@@ -205,18 +205,23 @@ class Shoulder(object):
                     pass
 
                         # Setup status box
-                cv2.rectangle(image, (0,0), (225,73), (245,117,16), -1)
+                cv2.rectangle(image, (0,0), (225,73), (0,0,0), -1)
                 
                 # Rep data
                 cv2.putText(image, 'REPS', (15,24), 
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1, cv2.LINE_AA)
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1, cv2.LINE_AA)
                 cv2.putText(image, str(self.counter), 
                             (10,60), 
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2, cv2.LINE_AA)
+
+                #Bar Data
+                cv2.rectangle(image, (1100, 100), (1175, 650), color, 3)
+                cv2.rectangle(image, (1100, int(angle)), (1175, 650), color, cv2.FILLED)
+                cv2.putText(image, f'{int(angle)} %', (1100, 75), cv2.FONT_HERSHEY_PLAIN, 4,color, 4)
                 
                 # Stage data
                 cv2.putText(image, 'STAGE', (80,24), 
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1, cv2.LINE_AA)
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1, cv2.LINE_AA)
                 cv2.putText(image, self.stage, 
                             (80,60), 
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2, cv2.LINE_AA)
@@ -226,7 +231,7 @@ class Shoulder(object):
                 cv2.rectangle(image, (640,0), (415,73), (0,255,0), -1)
 
                 # guide data
-                cv2.putText(image, 'Now', (430,24), 
+                cv2.putText(image, 'Next', (430,24), 
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1, cv2.LINE_AA)
                 cv2.putText(image, self.guide, 
                             (430,60), 
@@ -320,18 +325,18 @@ class Leg(object):
                     pass
 
                         # Setup status box
-                cv2.rectangle(image, (0,0), (225,73), (245,117,16), -1)
+                cv2.rectangle(image, (0,0), (225,73), (0,0,0), -1)
                 
                 # Rep data
                 cv2.putText(image, 'REPS', (15,24), 
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1, cv2.LINE_AA)
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1, cv2.LINE_AA)
                 cv2.putText(image, str(self.counter), 
                             (10,60), 
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2, cv2.LINE_AA)
                 
                 # Stage data
                 cv2.putText(image, 'STAGE', (80,24), 
-                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1, cv2.LINE_AA)
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255,255,255), 1, cv2.LINE_AA)
                 cv2.putText(image, self.stage, 
                             (80,60), 
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2, cv2.LINE_AA)

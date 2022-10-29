@@ -145,7 +145,7 @@
                     <li><a href="#footer">About</a></li>
                     <li>
 						<button type="button" class="btn btn-primary"><a href="https://agoravideocallmarzuk.netlify.app/">Community</a></li></button>
-						<span>   </span>
+						<span>&nbsp</span>
 						<button type="button" class="btn btn-primary"><a href="https://agoravideocallmarzuk.netlify.app/">DashBoard</a></li></button>
 
 						
@@ -510,7 +510,7 @@
         </div>
         <div
           class="fh5co-parallax"
-          style="background-image: url(images/home-image-3.jpg)"
+          style="background-image: url({{url_for('static', filename='images/pushup.png')}})"
           data-stellar-background-ratio="0.5"
         >
           <div class="overlay"></div>
@@ -520,7 +520,7 @@
                 class="col-md-8 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 text-center fh5co-table"
               >
                 <div class="fh5co-intro fh5co-table-cell animate-box">
-                  <h1 class="text-center">Stop Wishing Start Doing</h1>
+                  <h1 class="text-center">"	Stop Wishing Start Doing"</h1>
                 </div>
               </div>
             </div>
@@ -604,7 +604,7 @@
                     Ai workout game is an interactive game for working out and
                     having fun.
                   </p>
-                  <span><a href="#" class="btn btn-default">Try Now</a></span>
+                  <span><a href="boxing.html" class="btn btn-default">Try Now</a></span>
                 </div>
               </div>
               <div class="col-md-4 col-sm-6">
@@ -750,7 +750,7 @@
 		</div> -->
         <div
           class="fh5co-parallax"
-          style="background-image: url(images/home-image-2.jpg)"
+          style="background-image: url({{url_for('static', filename='images/crunch.png')}})"
           data-stellar-background-ratio="0.5"
         >
           <div class="overlay"></div>
@@ -759,13 +759,14 @@
               <div
                 class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-sm-offset-0 col-xs-12 col-xs-offset-0 fh5co-table"
               >
-                <div class="fh5co-intro fh5co-table-cell box-area">
+			  <div class="fh5co-intro fh5co-table-cell animate-box">
+				<h1 class="text-center">"Motivation is what gets you started. Habit is what keeps you going"</h1>
+			  </div>
+                <!-- <div class="fh5co-intro fh5co-table-cell box-area">
                   <div class="animate-box">
-                    <h1>Fitness Classes this summer</h1>
-                    <p>Pay now and get 25% Discount</p>
-                    <a href="#" class="btn btn-primary">Become A Member</a>
+                    <h1>“Motivation is what gets you started. Habit is what keeps you going.”</h1>
                   </div>
-                </div>
+                </div> -->
               </div>
             </div>
           </div>
@@ -939,43 +940,19 @@
         <footer>
           <div id="footer">
             <div class="container">
-              <!-- <div class="row">
+              <div class="row">
 						<div class="col-md-4 animate-box">
-							<h3 class="section-title">About Us</h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+							<!-- <h3 class="section-title">About Us</h3>
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p> -->
 						</div>
 
-						<div class="col-md-4 animate-box">
-							<h3 class="section-title">Our Address</h3>
-							<ul class="contact-info">
-								<li><i class="icon-map-marker"></i>198 West 21th Street, Suite 721 New York NY 10016</li>
-								<li><i class="icon-phone"></i>+ 1235 2355 98</li>
-								<li><i class="icon-envelope"></i><a href="#">info@yoursite.com</a></li>
-								<li><i class="icon-globe2"></i><a href="#">www.yoursite.com</a></li>
-							</ul>
+						<div class="col-md-15 animate-box" style="text-align: center;">
+							<h3 class="section-title">About Us</h3>
+							<p style="text-align: center;">Everyone benefits from exercise and physical activity. Staying active can benefit you in a variety of ways, regardless of your health or physical abilities. In reality, research shows that “taking it easy” is dangerous. When older adults lose their ability to perform activities on their own, inactivity is often to fault rather than ageing. Lack of physical activity can also contribute to additional doctor visits, hospitalizations, and medication use for a range of conditions. This idea of a personal AI fitness trainer allows more people to get involved in the fitness field using this AI trainer makes sure everyone can perform exercises in correct way, minimizing the risk of injuries.</p> 
 						</div>
-						<div class="col-md-4 animate-box">
-							<h3 class="section-title">Drop us a line</h3>
-							<form class="contact-form">
-								<div class="form-group">
-									<label for="name" class="sr-only">Name</label>
-									<input type="name" class="form-control" id="name" placeholder="Name">
-								</div>
-								<div class="form-group">
-									<label for="email" class="sr-only">Email</label>
-									<input type="email" class="form-control" id="email" placeholder="Email">
-								</div>
-								<div class="form-group">
-									<label for="message" class="sr-only">Message</label>
-									<textarea class="form-control" id="message" rows="7" placeholder="Message"></textarea>
-								</div>
-								<div class="form-group">
-									<input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="Send Message">
-								</div>
-							</form>
-						</div>
-					</div> -->
-              <div class="row copy-right">
+						
+					</div>
+              <!-- <div class="row copy-right">
                 <div class="col-md-6 col-md-offset-3 text-center">
                   <h3 class="section-title">Thank You!!!</h3>
                   <p class="fh5co-social-icons">
@@ -985,18 +962,9 @@
                     <a href="#"><i class="icon-dribbble2"></i></a>
                     <a href="#"><i class="icon-youtube"></i></a>
                   </p>
-                  <p>
-                    Copyright 2016 Free Html5 <a href="#">Fitness</a>. All
-                    Rights Reserved. <br />Made with
-                    <i class="icon-heart3"></i> by
-                    <a href="http://freehtml5.co/" target="_blank"
-                      >Freehtml5.co</a
-                    >
-                    / Demo Images:
-                    <a href="https://unsplash.com/" target="_blank">Unsplash</a>
-                  </p>
+                  
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </footer>
