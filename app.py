@@ -66,4 +66,20 @@ def index():
 def bmi():
     return render_template('bmi.html')
 
+@app.route('/workout_planner_underweight.html')
+def workout_planner_underweight():
+    return render_template('workout_planner_underweight.html')    
+
+@app.route('/workout_planner_normal.html')
+def workout_planner_normal():
+    return render_template('workout_planner_normal.html') 
+
+@app.route('/workout_planner_overweight.html')
+def workout_planner_overweight():
+    return render_template('workout_planner_overweight.html') 
+
+@app.route('/workout_planner_obese.html')
+def workout_planner_obese():
+    return render_template('workout_planner_obese.html') 
+
 app.run(debug=True)
