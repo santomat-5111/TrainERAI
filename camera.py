@@ -14,6 +14,7 @@ class Video(object):
         self.counter = 0 
         self.stage = None
         self.guide = None
+        self.cal = 0
     def __del__(self):
         self.video.release()
     def get_frame(self):
@@ -83,6 +84,7 @@ class Video(object):
                         self.stage="up"
                         self.guide = "Downward"
                         self.counter +=1
+                        self.cal += 0.18
                         #print(counter)
 
                 except:
@@ -115,6 +117,16 @@ class Video(object):
                 cv2.putText(image, self.guide, 
                             (430,60), 
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2, cv2.LINE_AA)
+
+                #Calorie Tracker
+                cv2.rectangle(image, (0,480), (180,410), (0,255,0), -1)
+
+                # calorie data
+                cv2.putText(image, 'Calorie', (10,430), 
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1, cv2.LINE_AA)
+                cv2.putText(image, str(round(self.cal, 2)), 
+                            (20,460), 
+                            cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 2, cv2.LINE_AA)
                 
                 # Render detections
                 mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS,
@@ -132,6 +144,7 @@ class Shoulder(object):
         self.counter = 0 
         self.stage = None
         self.guide = None
+        self.cal = 0
     def __del__(self):
         self.video.release()
     def get_frame(self):
@@ -193,12 +206,13 @@ class Shoulder(object):
                     # Curl counter logic+
                   
                     if angle > 150:
-                        self.stage = "down"
-                        self.guide = "Upward"
-                    if angle < 70 and self.stage =='down':
-                        self.stage="up"
+                        self.stage = "up"
                         self.guide = "Downward"
+                    if angle < 70 and self.stage =='up':
+                        self.stage="down"
+                        self.guide = "Upward"
                         self.counter +=1
+                        self.cal +=0.2
                         #print(counter)
 
                 except:
@@ -232,7 +246,19 @@ class Shoulder(object):
                             cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1, cv2.LINE_AA)
                 cv2.putText(image, self.guide, 
                             (430,60), 
-                            cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2, cv2.LINE_AA)
+                            cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 2, cv2.LINE_AA)
+
+
+                #Calorie Tracker
+                cv2.rectangle(image, (0,480), (180,410), (0,255,0), -1)
+
+                # calorie data
+                cv2.putText(image, 'Calorie', (10,430), 
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1, cv2.LINE_AA)
+                cv2.putText(image, str(round(self.cal, 2)), 
+                            (20,460), 
+                            cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 2, cv2.LINE_AA)
+
                 
                 # Render detections
                 mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS,
@@ -249,6 +275,7 @@ class Leg(object):
         self.counter = 0 
         self.stage = None
         self.guide = None
+        self.cal = 0
     def __del__(self):
         self.video.release()
     def get_frame(self):
@@ -316,6 +343,7 @@ class Leg(object):
                         self.stage="down"
                         self.guide = "Upward"
                         self.counter +=1
+                        self.cal += 0.32
                         #print(counter)
 
                 except:
@@ -348,6 +376,16 @@ class Leg(object):
                 cv2.putText(image, self.guide, 
                             (430,60), 
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2, cv2.LINE_AA)
+
+                #Calorie Tracker
+                cv2.rectangle(image, (0,480), (180,410), (0,255,0), -1)
+
+                # calorie data
+                cv2.putText(image, 'Calorie', (10,430), 
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0,0,0), 1, cv2.LINE_AA)
+                cv2.putText(image, str(round(self.cal, 2)), 
+                            (20,460), 
+                            cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,0), 2, cv2.LINE_AA)
                 
                 # Render detections
                 mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS,
