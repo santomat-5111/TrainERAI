@@ -214,10 +214,7 @@ class Shoulder(object):
                             (10,60), 
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (255,255,255), 2, cv2.LINE_AA)
 
-                #Bar Data
-                cv2.rectangle(image, (1100, 100), (1175, 650), color, 3)
-                cv2.rectangle(image, (1100, int(angle)), (1175, 650), color, cv2.FILLED)
-                cv2.putText(image, f'{int(angle)} %', (1100, 75), cv2.FONT_HERSHEY_PLAIN, 4,color, 4)
+               
                 
                 # Stage data
                 cv2.putText(image, 'STAGE', (80,24), 
